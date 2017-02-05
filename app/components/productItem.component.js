@@ -18,17 +18,17 @@ export const properties = {
   },
   controller: ProductItemController,
   template: `
-    <div>
+    <h2>
       {{ $ctrl.product.name }} - \${{ $ctrl.product.price }}
+    </h2>
+    <div>
+      <button ng-click="$ctrl.countPicked(1)">Add to cart</button>
     </div>
     <div>
       <image ng-src="{{ $ctrl.product.image }}" width="200" style="clear:both;">
     </div>
     <div>
       {{ $ctrl.product.description }}
-    </div>
-    <div>
-      <button ng-click="$ctrl.countPicked(3)">Add to cart</button>
     </div>
   `
 }

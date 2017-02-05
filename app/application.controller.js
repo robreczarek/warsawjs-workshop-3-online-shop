@@ -16,8 +16,12 @@ export default class ApplicationController {
 
   addProductToCart(product, amount) {
     this.inCartProducts.push({product, amount})
-    console.log(`Adding ${amount} of ${product.name}.`)
-    console.log(this.inCartProducts)
+    //console.log(`Adding ${amount} of ${product.name}.`)
+    //console.log(this.inCartProducts)
+  }
+
+  removeProductFromCart(product) {
+    this.inCartProducts = this.inCartProducts.filter(({id}) => id != product.id)
   }
 
 }
