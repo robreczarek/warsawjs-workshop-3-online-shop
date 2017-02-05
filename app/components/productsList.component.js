@@ -11,7 +11,6 @@ const template = `
 
 class ProductsListController {
   addToCart(product, amount) {
-    console.log('It works in the product list!')
     this.requestAddToCart({ product: product, amount: amount })
   }
 }

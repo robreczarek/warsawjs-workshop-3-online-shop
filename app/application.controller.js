@@ -9,13 +9,15 @@ export default class ApplicationController {
       {name: 'Apple', price: 5, image: './images/apple.png'},
       {name: 'Pineapple', price: 10, image: './images/pineapple.png'}
     ]
-    this.cart = [
+    this.inCartProducts = [
 
     ]
   }
 
   addProductToCart(product, amount) {
-    this.cart.push({product, amount})
+    this.inCartProducts.push({product, amount})
+    console.log(`Adding ${amount} of ${product.name}.`)
+    console.log(this.inCartProducts)
   }
 
 }

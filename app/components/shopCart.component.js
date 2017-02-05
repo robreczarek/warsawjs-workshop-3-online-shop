@@ -1,4 +1,12 @@
+const template = `
+<div>
+  Cart: {{ $ctrl.cart.length }} products.
+</div>`
+
 export const name = 'shopCart'
 export const properties = {
-  template: `<div>Shop cart</div>`
+  bindings: {
+    cart: '<items'
+  },
+  template
 }

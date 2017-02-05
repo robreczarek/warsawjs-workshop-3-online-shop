@@ -6,7 +6,6 @@ class ProductItemController {
 
   countPicked(count) {
     this.addToCart({amount: count})
-    console.log('It works in product item!')
   }
 
 }
@@ -29,7 +28,7 @@ export const properties = {
       {{ $ctrl.product.description }}
     </div>
     <div>
-      <button ng-click="$ctrl.countPicked()">Add to cart</button>
+      <button ng-click="$ctrl.countPicked(3)">Add to cart</button>
     </div>
   `
 }
