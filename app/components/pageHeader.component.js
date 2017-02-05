@@ -1,7 +1,10 @@
 const template = `
 <header>
   <div>
-    <shop-logo size="medium"></shop-logo>
+    <span>
+      <shop-logo size="medium"></shop-logo>
+      <h3 style="float: left;vertical-align: middle;">Meowtastic Shop</h3>
+    </span>
     <div ng-transclude="controls"></div>
   </div>
   <div ng-transclude="bar"></div>

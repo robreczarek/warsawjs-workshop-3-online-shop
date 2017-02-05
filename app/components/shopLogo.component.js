@@ -17,6 +17,5 @@ export const properties = {
   },
   controller: ShopLogoController,
   source: './images/logo.png',
-  template: `<image ng-src="{{ $ctrl.source }}" width="{{ $ctrl.width }}">`
+  template: `<image ng-src="{{ $ctrl.source }}" width="{{ $ctrl.width }}" style="float:left;">`
 }
-
