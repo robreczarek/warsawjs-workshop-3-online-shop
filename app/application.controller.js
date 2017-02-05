@@ -1,5 +1,8 @@
 export default class ApplicationController {
   constructor() {
-    this.what = 'Universe!'
+    this.products = [
+      { name: 'Orange', price: 10 },
+      { name: 'Banana', price: 20 }
+    ]
   }
 }
