@@ -1,5 +1,8 @@
 class shopCartController {
 
+  constructor() {
+  }
+
   get cartTotal() {
     let cart = this.cart || []
     let total = cart.reduce(function(accumulator, currentValue, currentIndex, array) {

@@ -2,6 +2,7 @@ class ProductItemController {
 
   constructor() {
     this.cart = 0;
+    this.count = 1;
   }
 
   countPicked(count) {
@@ -18,17 +19,18 @@ export const properties = {
   },
   controller: ProductItemController,
   template: `
-    <h2>
-      {{ $ctrl.product.name }} - \${{ $ctrl.product.price }}
-    </h2>
     <div>
-      <button ng-click="$ctrl.countPicked(1)">Add to cart</button>
-    </div>
-    <div>
-      <image ng-src="{{ $ctrl.product.image }}" width="200" style="clear:both;">
-    </div>
-    <div>
-      {{ $ctrl.product.description }}
+      <h2>
+        {{ $ctrl.product.name }} - \${{ $ctrl.product.price }}
+      </h2>
+      <form name="itemForm" ng-model="$ctrl.count" min="1" max="99">
+        <input type="number" ng-model="$ctrl.count" min="1" value="1" style="width: 2.5em">
+        <button ng-disabled="itemForm.$invalid" ng-click="$ctrl.countPicked($ctrl.count)">Add to cart</button>
+      </form>
+
+      <p>
+        {{ $ctrl.product.description }}
+      </p>
     </div>
   `
 }
