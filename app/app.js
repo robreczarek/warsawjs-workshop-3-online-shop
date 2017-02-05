@@ -1,6 +1,7 @@
 import ApplicationController from './application.controller'
+import {moduleName as componentsModuleName} from './components/components.module'
 
-export const moduleName = 'shop'
+export const moduleName = 'show'
 
-angular.module(moduleName, [])
-    .controller('ApplicationController', ApplicationController)
+angular.module(moduleName, [ componentsModuleName ])
+  .controller('ApplicationController', ApplicationController)
