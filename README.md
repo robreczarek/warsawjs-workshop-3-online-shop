@@ -1,10 +1,10 @@
 # WarsawJS Workshop #3 - Online Shop
 
-> Aplikacja testowa stworzona na potrzeby WarsawJS Workshop #3
+> Test project created during the WarsawJS Workshop #3
 
 ![](http://warsawjs.com/assets/images/logo/logo-transparent-240x240.png)
 
-## Jak uruchomić?
+## How to Run?
 
 ```
 $ npm install
@@ -12,7 +12,7 @@ $ npm start
 $ npm run start:api
 ```
 
-## Wymagania
+## Requirements
 
 * Angular v1.6.1
-* Zainstalowany Node.js v7+
+* Node.js v7+

@@ -1,5 +1,5 @@
 export default class ApplicationController {
   constructor() {
-    this.what = 'World!'
+    this.what = 'Universe!'
   }
 }

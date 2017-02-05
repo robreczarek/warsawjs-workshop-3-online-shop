@@ -2,8 +2,8 @@
   "name": "warsawjs-workshop-3-online-shop",
   "version": "0.0.1",
   "description": "WarsawJS Workshop #3 - Online Shop",
-  "license": "MIT",
-  "author": "Mateusz Kocz",
+  "license": "GPL-3.0",
+  "author": "Robert Obreczarek",
   "scripts": {
     "start:manual": "http-server -a localhost -p 8000 ./app",
     "start": "live-server ./app --port=8000",
